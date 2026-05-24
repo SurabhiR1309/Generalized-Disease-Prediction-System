@@ -6,22 +6,22 @@ Users can input medical parameters and blood report values into the platform, af
 
 The project aims to make preliminary health assessment more accessible, informative, and user-friendly while demonstrating the application of machine learning in healthcare analytics and decision support systems.
 
-Features
-Disease prediction using ML models
-Supports diabetes, heart disease, and liver disease prediction
-Blood report and medical parameter analysis
-Doctor recommendation system
-Displays consultation fees, city, and experience
-Interactive and user-friendly interface
+Features: 
+Disease prediction using ML models.
+Supports diabetes, heart disease, and liver disease prediction.
+Blood report and medical parameter analysis.
+Doctor recommendation system.
+Displays consultation fees, city, and experience.
+Interactive and user-friendly interface.
 
-Tech Stack
-Python
-Django
-HTML, CSS, JavaScript
-Bootstrap / Tailwind CSS
-Scikit-learn
-Pandas & NumPy
-SQLite/MySQL
+Tech Stack: 
+Python,
+Django,
+HTML, CSS, JavaScript,
+Bootstrap / Tailwind CSS,
+Scikit-learn,
+Pandas & NumPy,
+SQLite/MySQL,
 
-Objective
+Objective: 
 To provide an intelligent healthcare assistance platform that combines disease prediction and doctor recommendation for improving early medical awareness and accessibility.
