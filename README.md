@@ -14,7 +14,7 @@ The project aims to make preliminary health assessment more accessible, informat
 * Displays consultation fees, city, and experience.
 * Interactive and user-friendly interface.
 
-## Tech Stack: 
+## Tech Stack
 * Python
 * Django
 * HTML
@@ -25,5 +25,5 @@ The project aims to make preliminary health assessment more accessible, informat
 * Pandas & NumPy
 * SQLite/MySQL
 
-## Objective: 
+## Objective
 To provide an intelligent healthcare assistance platform that combines disease prediction and doctor recommendation for improving early medical awareness and accessibility.
