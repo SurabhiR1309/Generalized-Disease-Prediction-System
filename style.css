@@ -1,0 +1,54 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+}
+
+/* Gradient background */
+.gradient-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  padding: 60px 20px;
+}
+
+/* Form card */
+.form-card {
+  background: #fff;
+  max-width: 800px;
+  border: none;
+}
+
+/* Result Page Styling */
+.result-page {
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-card {
+  background: #fff;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+  transform: scale(1.02);
+}
+
+/* Doctor cards */
+.doctor-card {
+  background: #f8f9fa;
+  border: none;
+  transition: 0.3s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}

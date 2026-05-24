@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Disease Predictor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5 p-4 bg-white rounded shadow">
+  <h2 class="text-center text-primary fw-bold mb-4">🧠 Disease Prediction System</h2>
+  <p class="text-muted text-center">Enter numeric test values for each disease or leave blank to skip.</p>
+  <form action="/predict" method="POST">
+    <div class="mb-3">
+      <label class="form-label fw-bold">Heart Disease Values</label>
+      <textarea class="form-control" name="heart_values" rows="2" placeholder="'age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal'e.g. 63,1,3,145,233,1,0,150,0,2.3,0,0,1"></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label fw-bold">Liver Disease Values</label>
+      <textarea class="form-control" name="liver_values" rows="2" placeholder="'Age', 'Gender', 'Total_Bilirubin', 'Direct_Bilirubin', 'Alkaline_Phosphotase', 'Alamine_Aminotransferase', 'Aspartate_Aminotransferase', 'Total_Protiens', 'Albumin', 'Albumin_and_Globulin_Ratio' e.g. 45,1,0.7,0.2,200,30,25,6.8,3.5,0.9"></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label fw-bold">Diabetes Values</label>
+      <textarea class="form-control" name="diabetes_values" rows="2" placeholder="'Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age' e.g. 6,148,72,35,0,33.6,0.627,50"></textarea>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary px-4">Predict Disease</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

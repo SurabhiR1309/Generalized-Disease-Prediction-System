@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Results</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5 p-4 bg-white rounded shadow">
+  <h2 class="text-center text-success fw-bold mb-4">Prediction Results</h2>
+
+  {% if message %}
+  <p class="text-center text-primary">{{ message }}</p>
+  {% endif %}
+
+  {% if results %}
+  <div class="mb-4">
+    <h4 class="fw-bold">Predicted Diseases:</h4>
+    <ul class="list-group">
+      {% for disease, result in results %}
+      <li class="list-group-item d-flex justify-content-between">
+        <span>{{ disease }}</span>
+        <span class="{{ 'text-danger' if result == 'Likely' else 'text-success' }}">{{ result }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if doctors %}
+  <h4 class="fw-bold mb-3">Recommended Doctors</h4>
+  <div class="row">
+    {% for doc in doctors %}
+    <div class="col-md-6 mb-3">
+      <div class="card p-3 shadow-sm border-0 rounded-4">
+        {% if doc['doctor name'] %}
+          <h5 class="text-primary fw-bold">{{ doc['doctor name'] }}</h5>
+          <p class="mb-1">Department: {{ doc['department'] }}</p>
+          <p class="mb-1 text-muted">Treatment: {{ doc['treatment type'] }}</p>
+          <p class="small text-secondary">{{ doc['source'] }}</p>
+        {% else %}
+          <h5 class="text-primary fw-bold">{{ doc['name'] }}</h5>
+          <p class="mb-1">{{ doc['speciality'] }}</p>
+          <p class="mb-1">{{ doc['degree'] }}</p>
+          <p class="mb-1">{{ doc['city'] }}, {{ doc['location'] }}</p>
+          <p class="text-muted small">Fee: {{ doc['consult fee'] }} | Exp: {{ doc['years of experience'] }}</p>
+          <p class="small text-secondary">{{ doc['source'] }}</p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="text-center mt-4">
+    <a href="/" class="btn btn-outline-primary">🔁 Predict Again</a>
+  </div>
+</div>
+</body>
+</html>
